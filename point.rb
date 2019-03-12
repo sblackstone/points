@@ -18,6 +18,14 @@ class Point
   def dist(other)
     (other.x - self.x)**2 + (other.y - self.y)**2
   end  
+  
+  def to_s
+    "(#{self.x},#{self.y})"
+  end
+  
+  def inspect
+    self.to_s
+  end
 
 end
 

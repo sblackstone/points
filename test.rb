@@ -13,6 +13,12 @@ points = []
   end
 end
 
+i = 0
+
 points.combination(3) do |a,b,c|
-  puts "#{a}, #{b}, #{c}"
+  i += 1
+  puts [a,b,c].sort.map(&:to_s).join(" ")
 end
+
+
+puts i
